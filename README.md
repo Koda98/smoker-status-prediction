@@ -19,15 +19,15 @@ I will be combining 2 datasets for this project. Both datasets contain a train s
 
 - `conda env create -f environment.yaml`
 - `conda activate smoker-prediction`
-- `pipenv install`
+- `poetry install`
 
 ## Deliverables
 
 - [ ] `README.md` with
   - [ ] Description of the problem
   - [ ] Instructions on how to run the project
-- [ ] Data
-  - [ ] You should either commit the dataset you used or have clear instructions how to download the dataset
+- [x] Data
+  - [x] You should either commit the dataset you used or have clear instructions how to download the dataset
 - [ ] Notebook (suggested name - `notebook.ipynb`) with
   - [ ] Data preparation and data clearning
   - [ ] EDA (ranges of values, missing values, analysis of target variable, feature importance analysis, etc)

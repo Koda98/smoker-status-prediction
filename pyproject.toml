@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "smoker-status-prediction"
+version = "0.1.0"
+description = "A machine learning project to predict a patient's smoker status."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "smoker_status_prediction"}]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+ipykernel = "^6.26.0"
+pandas = "^2.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
