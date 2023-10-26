@@ -8,10 +8,10 @@ Smoking's well-established adverse effects on health are unquestionable, making 
 
 ## Data
 
-I will be combining 2 datasets for this project. Both datasets contain a train set and test set, where the target column is missing from the test set.
+I will be combining 2 datasets for this project.
 
-1. [Kaggle Competition Data](https://www.kaggle.com/competitions/playground-series-s3e24/data): This data was provided by Kaggle for the competition and was **synthetically generated** using a deep learning model. The deep learning model was trained using the data from the second dataset.
-2. [Smoker Status Prediction using Bio-Signals](https://www.kaggle.com/datasets/gauravduttakiit/smoker-status-prediction-using-biosignals): This data was used to train the deep learning model which generated the data in the first dataset.
+1. [Kaggle Competition Data](https://www.kaggle.com/competitions/playground-series-s3e24/data): This data was provided by Kaggle for the competition and was **synthetically generated** using a deep learning model. The deep learning model was trained using the data from the second dataset. It contains a train and test set, where the target column `smoking` is missing from the test set.
+2. [Body signal of smoking](https://www.kaggle.com/datasets/kukuroo3/body-signal-of-smoking/data): This data was used to train the deep learning model which generated the data in the first dataset. I will be using this dataset to increase the size of the my training set. Hopefully, this will improve my model's performance.
 
 ## Usage
 
@@ -24,7 +24,7 @@ I will be combining 2 datasets for this project. Both datasets contain a train s
 ## Deliverables
 
 - [ ] `README.md` with
-  - [ ] Description of the problem
+  - [x] Description of the problem
   - [ ] Instructions on how to run the project
 - [x] Data
   - [x] You should either commit the dataset you used or have clear instructions how to download the dataset
@@ -38,9 +38,9 @@ I will be combining 2 datasets for this project. Both datasets contain a train s
 - [ ] Script `predict.py` (suggested name)
   - [ ] Loading the model
   - [ ] Serving it via a web serice (with Flask or specialized sofware - BentoML, KServe, etc)
-- [ ] Files with dependencies
-  - [ ] `Pipenv` and `Pipenv.lock` if you use Pipenv
-  - [ ] or equivalents: conda environment file, requirements.txt or pyproject.toml
+- [x] Files with dependencies
+  - [x] `Pipenv` and `Pipenv.lock` if you use Pipenv
+  - [x] or equivalents: conda environment file, requirements.txt or pyproject.toml
 - [ ] `Dockerfile` for running the service
 - [ ] Deployment
   - [ ] URL to the service you deployed or
@@ -48,4 +48,4 @@ I will be combining 2 datasets for this project. Both datasets contain a train s
 
 ## Future Work
 
-- [One Kaggle user pointed out](https://www.kaggle.com/competitions/playground-series-s3e24/discussion/450510) that the target values for the second test set can be found in another dataset on Kaggle: [Body signal of smoking](https://www.kaggle.com/datasets/kukuroo3/body-signal-of-smoking/data). This dataset cites its source as the [Korean Government](https://www.data.go.kr/data/15007122/fileData.do#/tab-layer-file). Since the competition dataset was synthetically generated, will using additional data sources improve accuracy on the competition test set?
+- The original dataset cites its source as the [Korean Government](https://www.data.go.kr/data/15007122/fileData.do#/tab-layer-file). It appears that additional data can be downloaded here. Since the competition dataset was synthetically generated, will using additional real-world data sources improve accuracy on the competition test set?
