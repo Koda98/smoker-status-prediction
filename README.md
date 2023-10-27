@@ -21,8 +21,8 @@ I will be combining 2 datasets for this project.
 | **Height** | Height of patient, **grouped by 5-cm increments** |
 | **Weight** | Weight of patient, **grouped by 5-kg increments** |
 | **Waist** | Waist circumference in cm|
-| **Eyesight (left)** | Visual acuity in left eye from 0.1 to 2.5, **blindness is 9.9** |
-| **Eyesight (right)** | Visual acuity in right eye from 0.1 to 2.5, **blindness is 9.9** |
+| **Eyesight (left)** | Visual acuity in left eye from 0.1 to 2.0 (higher is better), where 1.0 is equivalent to 20/20, **blindness is 9.9** |
+| **Eyesight (right)** | Visual acuity in right eye from 0.1 to 2.0 (higher is better), where 1.0 is equivalent to 20/20, **blindness is 9.9** |
 | **Hearing (left)** | Hearing in left ear where 1=normal, 2=abnormal |
 | **Hearing (right)** | Hearing in right ear where 1=normal, 2=abnormal |
 | **Systolic** | Blood pressure, amount of pressure experienced by the arteries when the heart is contracting |
@@ -39,7 +39,7 @@ I will be combining 2 datasets for this project.
 | **ALT** | Alanine transaminase, an enzyme found in the liver that helps convert proteins into energy for the liver cells. When the liver is damaged, ALT is released into the bloodstream and levels increase. |
 | **GTP** | Gamma-glutamyltransferase (GGT), an enzyme in the blood. Higher-than-usual levels may mean liver or bile duct damage. |
 | **Dental Caries** | Cavities, 0=absent, 1=present |
-| **Smoking** | 0=non-smoker, 1=smoker
+| **Smoking** | 0=non-smoker, 1=smoker |
 
 ## Usage
 
