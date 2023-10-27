@@ -13,6 +13,34 @@ I will be combining 2 datasets for this project.
 1. [Kaggle Competition Data](https://www.kaggle.com/competitions/playground-series-s3e24/data): This data was provided by Kaggle for the competition and was **synthetically generated** using a deep learning model. The deep learning model was trained using the data from the second dataset. It contains a train and test set, where the target column `smoking` is missing from the test set.
 2. [Body signal of smoking](https://www.kaggle.com/datasets/kukuroo3/body-signal-of-smoking/data): This data was used to train the deep learning model which generated the data in the first dataset. I will be using this dataset to increase the size of the my training set. Hopefully, this will improve my model's performance.
 
+### Feature Descriptions
+
+| Name | Description |
+| ---- | ----------- |
+| **Age** | Age of patient, **grouped by 5-year increments** |
+| **Height** | Height of patient, **grouped by 5-cm increments** |
+| **Weight** | Weight of patient, **grouped by 5-kg increments** |
+| **Waist** | Waist circumference in cm|
+| **Eyesight (left)** | Visual acuity in left eye from 0.1 to 2.5, **blindness is 9.9** |
+| **Eyesight (right)** | Visual acuity in right eye from 0.1 to 2.5, **blindness is 9.9** |
+| **Hearing (left)** | Hearing in left ear where 1=normal, 2=abnormal |
+| **Hearing (right)** | Hearing in right ear where 1=normal, 2=abnormal |
+| **Systolic** | Blood pressure, amount of pressure experienced by the arteries when the heart is contracting |
+| **Relaxation** | Blood pressure (diastolic), amount of pressure experienced by the arteries when the heart is relaxing |
+| **Fasting Blood Sugar** | Blood sugar level (concentration per 100ml of blood) before eating |
+| **Cholesterol** | Sum of ester-type and non-ester-type cholesterol |
+| **Triglyceride** | Amount of simple and neutral lipids in blood |
+| **HDL** | High Density Lipoprotein, "good" cholesterol, absorbs cholesterol in the blood and carries it back to the liver |
+| **LDL** | Low Density Lipoprotein, "bad" cholesterol, makes up most of body's cholesterol. High levels of this raise risk for heart disease and stroke. |
+| **Hemoglobin** | Protein contained in red blood cells that delivers oxygen to the tissues |
+| **Urine Protein** | Amount of protein mixed in urine |
+| **Serum Creatinine** | Creatine level, Creatinine is a waste product in your blood that comes from your muscles. Healthy kidneys filter creatinine out of your blood through your urine. |
+| **AST** | Aspartate transaminase, an enzyme that helps the body break down amino acids. It's usually present in blood at low levels. An increase in AST levels may mean liver damage, liver disease or muscle damage. |
+| **ALT** | Alanine transaminase, an enzyme found in the liver that helps convert proteins into energy for the liver cells. When the liver is damaged, ALT is released into the bloodstream and levels increase. |
+| **GTP** | Gamma-glutamyltransferase (GGT), an enzyme in the blood. Higher-than-usual levels may mean liver or bile duct damage. |
+| **Dental Caries** | Cavities, 0=absent, 1=present |
+| **Smoking** | 0=non-smoker, 1=smoker
+
 ## Usage
 
 ### Environment Setup
