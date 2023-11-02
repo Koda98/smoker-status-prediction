@@ -57,8 +57,8 @@ I will be combining 2 datasets for this project.
 - [x] Data
   - [x] You should either commit the dataset you used or have clear instructions how to download the dataset
 - [ ] Notebook (suggested name - `notebook.ipynb`) with
-  - [ ] Data preparation and data clearning
-  - [ ] EDA (ranges of values, missing values, analysis of target variable, feature importance analysis, etc)
+  - [x] Data preparation and data clearning
+  - [x] EDA (ranges of values, missing values, analysis of target variable, feature importance analysis)
   - [ ] Model selection process and parameter tuning
 - [ ] Script `train.py` (suggested name)
   - [ ] Training the final model
