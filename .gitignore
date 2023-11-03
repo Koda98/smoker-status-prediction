@@ -5,3 +5,5 @@ __pycache__/
 
 .vscode/
 data/competition-data/sample_submission.csv
+
+images/
