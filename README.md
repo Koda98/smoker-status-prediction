@@ -69,7 +69,7 @@ I will be combining 2 datasets for this project.
 - [x] Files with dependencies
   - [x] `Pipenv` and `Pipenv.lock` if you use Pipenv
   - [x] or equivalents: conda environment file, requirements.txt or pyproject.toml
-- [ ] `Dockerfile` for running the service
+- [x] `Dockerfile` for running the service
 - [ ] Deployment
   - [ ] URL to the service you deployed or
   - [ ] Video or image of how you interact with the deployed service
