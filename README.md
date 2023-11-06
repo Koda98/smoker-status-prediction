@@ -63,9 +63,9 @@ I will be combining 2 datasets for this project.
 - [x] Script `train.py` (suggested name)
   - [x] Training the final model
   - [x] Saving it to a file (e.g. pickle) or saving it with specialized software (BentoML)
-- [ ] Script `predict.py` (suggested name)
-  - [ ] Loading the model
-  - [ ] Serving it via a web serice (with Flask or specialized sofware - BentoML, KServe, etc)
+- [x] Script `predict.py` (suggested name)
+  - [x] Loading the model
+  - [x] Serving it via a web serice (with Flask or specialized sofware - BentoML, KServe, etc)
 - [x] Files with dependencies
   - [x] `Pipenv` and `Pipenv.lock` if you use Pipenv
   - [x] or equivalents: conda environment file, requirements.txt or pyproject.toml

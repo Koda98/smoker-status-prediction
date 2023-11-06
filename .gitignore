@@ -5,5 +5,7 @@ __pycache__/
 
 .vscode/
 submission.csv
+temp.ipynb
+predict-test.py
 
 images/

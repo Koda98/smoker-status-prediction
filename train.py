@@ -120,6 +120,6 @@ submission.to_csv('submission.csv', index=False)
 
 # save model
 with open(output_file, 'wb') as f_out:
-    pickle.dump(xgb_model, f_out)
+    pickle.dump((xgb_model), f_out)
 
-print(f'the model is saved to {output_file}')
+print(f'The model is saved to {output_file}')
