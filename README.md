@@ -59,7 +59,7 @@ I will be combining 2 datasets for this project.
 - [ ] Notebook (suggested name - `notebook.ipynb`) with
   - [x] Data preparation and data clearning
   - [x] EDA (ranges of values, missing values, analysis of target variable, feature importance analysis)
-  - [ ] Model selection process and parameter tuning
+  - [x] Model selection process and parameter tuning
 - [ ] Script `train.py` (suggested name)
   - [ ] Training the final model
   - [ ] Saving it to a file (e.g. pickle) or saving it with specialized software (BentoML)
