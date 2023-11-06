@@ -56,13 +56,13 @@ I will be combining 2 datasets for this project.
   - [ ] Instructions on how to run the project
 - [x] Data
   - [x] You should either commit the dataset you used or have clear instructions how to download the dataset
-- [ ] Notebook (suggested name - `notebook.ipynb`) with
+- [x] Notebook (suggested name - `notebook.ipynb`) with
   - [x] Data preparation and data clearning
   - [x] EDA (ranges of values, missing values, analysis of target variable, feature importance analysis)
   - [x] Model selection process and parameter tuning
-- [ ] Script `train.py` (suggested name)
-  - [ ] Training the final model
-  - [ ] Saving it to a file (e.g. pickle) or saving it with specialized software (BentoML)
+- [x] Script `train.py` (suggested name)
+  - [x] Training the final model
+  - [x] Saving it to a file (e.g. pickle) or saving it with specialized software (BentoML)
 - [ ] Script `predict.py` (suggested name)
   - [ ] Loading the model
   - [ ] Serving it via a web serice (with Flask or specialized sofware - BentoML, KServe, etc)
