@@ -1,4 +1,5 @@
-FROM --platform=linux/amd64 python:3.10-slim
+# FROM --platform=linux/amd64 python:3.10-slim
+FROM python:3.10-slim
 
 # Install all dependencies with poetry
 RUN pip install poetry==1.4.0

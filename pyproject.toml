@@ -19,6 +19,7 @@ gunicorn = "^21.2.0"
 matplotlib = "^3.8.1"
 seaborn = "^0.13.0"
 ipykernel = "^6.26.0"
+awsebcli = "^3.20.10"
 
 [build-system]
 requires = ["poetry-core"]

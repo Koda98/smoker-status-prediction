@@ -49,6 +49,11 @@ I will be combining 2 datasets for this project.
 - `conda activate smoker-prediction`
 - `poetry install`
 
+### Deployment
+
+- URL deployed to: smoking-serving-env.eba-rfk3vyqz.us-west-1.elasticbeanstalk.com
+- `eb create smoking-serving-env -i t3.small --timeout 10`
+
 ## Deliverables
 
 - [ ] `README.md` with
@@ -71,7 +76,7 @@ I will be combining 2 datasets for this project.
   - [x] or equivalents: conda environment file, requirements.txt or pyproject.toml
 - [x] `Dockerfile` for running the service
 - [ ] Deployment
-  - [ ] URL to the service you deployed or
+  - [x] URL to the service you deployed or
   - [ ] Video or image of how you interact with the deployed service
 
 ## Future Work

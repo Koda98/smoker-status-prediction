@@ -9,3 +9,10 @@ temp.ipynb
 predict-test.py
 
 images/
+smoking-prediction_credentials.csv
+smoking-prediction_accessKeys.csv
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
