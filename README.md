@@ -2,13 +2,15 @@
 
 ## Problem Description
 
-The goal of this project is to create a machine learning model to predict a patient's smoking status using various bio-signals. This is part of a [Kaggle Playground Series Competition](https://www.kaggle.com/competitions/playground-series-s3e24).
+The goal of this project is to create a machine learning model to predict a patient's smoking status using various bio-signals. This is part of a [Kaggle Playground Series Competition](https://www.kaggle.com/competitions/playground-series-s3e24). Our model will output the **probability** that a given patient smokes. We will evaluate the model's performance on area under the ROC curve using Stratified KFold validation.
+
+### Background
 
 Smoking's well-established adverse effects on health are unquestionable, making it a leading cause of preventable global morbidity and mortality by 2018. A World Health Organization report forecasts that smoking-related deaths will reach 10 million by 2030. Although evidence-based smoking cessation strategies have been advocated, their success remains limited, with traditional counseling often considered ineffective and time-consuming. To address this, various factors have been proposed to predict an individual's likelihood of quitting, but their application yields inconsistent results. A solution lies in developing predictive models using machine learning techniques, a promising approach in recent years for understanding an individual's chances of quitting smoking and improving public health outcomes.
 
 ## Data
 
-I will be combining 2 datasets for this project.
+We will be combining 2 datasets for this project.
 
 1. [Kaggle Competition Data](https://www.kaggle.com/competitions/playground-series-s3e24/data): This data was provided by Kaggle for the competition and was **synthetically generated** using a deep learning model. The deep learning model was trained using the data from the second dataset. It contains a train and test set, where the target column `smoking` is missing from the test set.
 2. [Body signal of smoking](https://www.kaggle.com/datasets/kukuroo3/body-signal-of-smoking/data): This data was used to train the deep learning model which generated the data in the first dataset. I will be using this dataset to increase the size of the my training set. Hopefully, this will improve my model's performance.
@@ -43,22 +45,94 @@ I will be combining 2 datasets for this project.
 
 ## Usage
 
-### Environment Setup
+### Local Environment Setup
 
-- `conda env create -f environment.yaml`
-- `conda activate smoker-prediction`
-- `poetry install`
+Here your environment can be set up to run the notebook & code locally.
 
-### Deployment
+1. Ensure [miniconda/anaconda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) is installed.
 
+2. Create the conda environment.
+
+  ```bash
+  conda env create -f environment.yaml
+  ```
+
+3. Activate environment.
+
+  ```bash
+  conda activate smoker-prediction
+  ```
+
+4. Install dependencies with poetry.
+
+```bash
+poetry install
+```
+
+**Note:** I used VSCode with the Jupyter extension to develop and run the notebook. You may need to install a jupyter extension or jupyter package.
+
+### Docker & Local Testing
+
+1. Ensure you have Docker installed.
+2. Build the image
+
+```bash
+docker build -t smoker-prediction .
+```
+
+3. Run the image
+
+```bash
+docker run -it- rm -p 9696:9696 smoker-prediction
+```
+
+4. Test the service locally
+
+```bash
+python predict-test.py --local
+```
+
+### Deployment & Cloud Testing
+
+- The model was deployed to AWS Elastic Beanstalk
 - URL deployed to: smoking-serving-env.eba-rfk3vyqz.us-west-1.elasticbeanstalk.com
-- `eb create smoking-serving-env -i t3.small --timeout 10`
+- To test the service running in the cloud run:
+
+```bash
+python predict-test.py
+```
+
+![Testing EB service](images/testing_eb.png)
+
+#### Deploying the model yourself
+
+If you want to deploy the model with elastic beanstalk yourself, you can follow the steps below
+
+1. Create an AWS IAM account to use for this project.
+2. Set up access keys
+3. Initialize the elastic beanstalk environment
+
+```bash
+eb init -p "Docker running on 64bit Amazon Linux 2023" smoking-serving -r <your-region>
+```
+
+4. Test locally
+
+```bash
+eb local run --port 9696
+```
+
+5. Deploy to cloud
+
+```bash
+eb create smoking-serving-env -i t3.small --timeout 10
+```
 
 ## Deliverables
 
-- [ ] `README.md` with
+- [x] `README.md` with
   - [x] Description of the problem
-  - [ ] Instructions on how to run the project
+  - [x] Instructions on how to run the project
 - [x] Data
   - [x] You should either commit the dataset you used or have clear instructions how to download the dataset
 - [x] Notebook (suggested name - `notebook.ipynb`) with
@@ -75,9 +149,9 @@ I will be combining 2 datasets for this project.
   - [x] `Pipenv` and `Pipenv.lock` if you use Pipenv
   - [x] or equivalents: conda environment file, requirements.txt or pyproject.toml
 - [x] `Dockerfile` for running the service
-- [ ] Deployment
+- [x] Deployment
   - [x] URL to the service you deployed or
-  - [ ] Video or image of how you interact with the deployed service
+  - [x] Video or image of how you interact with the deployed service
 
 ## Future Work
 

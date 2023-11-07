@@ -11,6 +11,7 @@ from xgboost import XGBClassifier
 # script parameters
 SEED = 42  # Random seed to be used throughout the script
 output_file = "model.bin"
+generate_kaggle_submission = False
 
 # Read and prepare data
 
@@ -113,10 +114,10 @@ xgb_model.fit(X_train, y_train)
 final_pred = xgb_model.predict_proba(df_test)[:, 1]
 
 # create submission file for kaggle
-submission = pd.read_csv("data/competition-data/sample_submission.csv")
-submission['smoking'] = final_pred
-submission.to_csv('submission.csv', index=False)
-
+if generate_kaggle_submission:
+    submission = pd.read_csv("data/competition-data/sample_submission.csv")
+    submission['smoking'] = final_pred
+    submission.to_csv('submission.csv', index=False)
 
 # save model
 with open(output_file, 'wb') as f_out:

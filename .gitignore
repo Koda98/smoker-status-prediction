@@ -6,9 +6,7 @@ __pycache__/
 .vscode/
 submission.csv
 temp.ipynb
-predict-test.py
 
-images/
 smoking-prediction_credentials.csv
 smoking-prediction_accessKeys.csv
 
