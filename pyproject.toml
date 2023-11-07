@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "A machine learning project to predict a patient's smoker status."
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-packages = [{include = "smoker_status_prediction"}]
 
 [tool.poetry.dependencies]
 python = "~3.10"
@@ -18,7 +17,6 @@ gunicorn = "^21.2.0"
 [tool.poetry.group.dev.dependencies]
 matplotlib = "^3.8.1"
 seaborn = "^0.13.0"
-ipykernel = "^6.26.0"
 awsebcli = "^3.20.10"
 
 [build-system]

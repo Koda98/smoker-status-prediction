@@ -69,8 +69,6 @@ Here your environment can be set up to run the notebook & code locally.
 poetry install
 ```
 
-**Note:** I used VSCode with the Jupyter extension to develop and run the notebook. You may need to install a jupyter extension or jupyter package.
-
 ### Docker & Local Testing
 
 1. Ensure you have Docker installed.
