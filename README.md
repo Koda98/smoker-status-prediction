@@ -106,8 +106,8 @@ python predict-test.py
 
 If you want to deploy the model with elastic beanstalk yourself, you can follow the steps below
 
-1. Create an AWS IAM account to use for this project.
-2. Set up access keys
+1. [Create an AWS IAM](https://mlbookcamp.com/article/aws) account to use for this project.
+2. [Set up access keys](https://docs.aws.amazon.com/sdkref/latest/guide/access-iam-users.html)
 3. Initialize the elastic beanstalk environment
 
 ```bash
