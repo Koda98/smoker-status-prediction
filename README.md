@@ -95,6 +95,8 @@ python predict-test.py --local
 - The model was deployed to AWS Elastic Beanstalk
 - URL deployed to: smoking-serving-env.eba-rfk3vyqz.us-west-1.elasticbeanstalk.com
 - To test the service running in the cloud run:
+> [!CAUTION]
+> Service is no longer running
 
 ```bash
 python predict-test.py
