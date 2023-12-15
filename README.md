@@ -95,6 +95,7 @@ python predict-test.py --local
 - The model was deployed to AWS Elastic Beanstalk
 - URL deployed to: smoking-serving-env.eba-rfk3vyqz.us-west-1.elasticbeanstalk.com
 - To test the service running in the cloud run:
+
 > [!CAUTION]
 > Service is no longer running
 
@@ -127,31 +128,6 @@ eb local run --port 9696
 ```bash
 eb create smoking-serving-env -i t3.small --timeout 10
 ```
-
-## Deliverables
-
-- [x] `README.md` with
-  - [x] Description of the problem
-  - [x] Instructions on how to run the project
-- [x] Data
-  - [x] You should either commit the dataset you used or have clear instructions how to download the dataset
-- [x] Notebook (suggested name - `notebook.ipynb`) with
-  - [x] Data preparation and data clearning
-  - [x] EDA (ranges of values, missing values, analysis of target variable, feature importance analysis)
-  - [x] Model selection process and parameter tuning
-- [x] Script `train.py` (suggested name)
-  - [x] Training the final model
-  - [x] Saving it to a file (e.g. pickle) or saving it with specialized software (BentoML)
-- [x] Script `predict.py` (suggested name)
-  - [x] Loading the model
-  - [x] Serving it via a web serice (with Flask or specialized sofware - BentoML, KServe, etc)
-- [x] Files with dependencies
-  - [x] `Pipenv` and `Pipenv.lock` if you use Pipenv
-  - [x] or equivalents: conda environment file, requirements.txt or pyproject.toml
-- [x] `Dockerfile` for running the service
-- [x] Deployment
-  - [x] URL to the service you deployed or
-  - [x] Video or image of how you interact with the deployed service
 
 ## Future Work
 
